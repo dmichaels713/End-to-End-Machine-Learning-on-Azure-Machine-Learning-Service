@@ -250,6 +250,7 @@ def main():
                            colsample_bytree = args.colsample_bytree,\
                            reg_lambda = args.reg_lambda,\
                            alpha = args.alpha,\
+                           num_class=5,
                            objective = args.objective)
     
     model = XGBClassifier(**hyperparameters)
